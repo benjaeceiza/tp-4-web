@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>TP4 · Pantalla en Vivo (SSE) - Regalo Grupal</title>
+  <link rel="stylesheet" href="/styles.css" />
+</head>
+<body>
+  <div class="container">
+    <div style="display: flex; justify-content: space-between; align-items: center;">
+      <h1>Ranking en Vivo · Regalo Grupal</h1>
+      <span id="connection-status" class="badge">Conectando SSE...</span>
+    </div>
+
+    <div class="card">
+      <h3>
+        Participantes conectados: <span id="screen-participant-count">0</span>
+      </h3>
+      <div id="screen-participants-list"></div>
+    </div>
+
+    <div class="card">
+      <h2>Ranking de Productos</h2>
+      <div id="screen-products-list" class="product-list"></div>
+    </div>
+  </div>
+
+  <script src="/screen.js"></script>
+</body>
+</html>
